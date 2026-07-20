@@ -12,7 +12,7 @@ import axios, { AxiosError } from "axios";
 // Vite exposes env vars prefixed with VITE_ via import.meta.env. Falls
 // back to localhost:8000 (the default `uvicorn main:app` address) so the
 // app works out of the box in local dev without any .env file.
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL ?? "http://localhost:8000";
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL ?? "https://ai-resume-analyzer-dgcf.onrender.com";
 
 export const apiClient = axios.create({
   baseURL: API_BASE_URL,
