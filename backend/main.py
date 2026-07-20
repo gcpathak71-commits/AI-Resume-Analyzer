@@ -47,10 +47,6 @@ if _env_origins:
         [origin.strip() for origin in _env_origins.split(",") if origin.strip()]
     )
 
-if _env_origins:
-    ALLOWED_ORIGINS.extend(
-        [origin.strip() for origin in _env_origins.split(",") if origin.strip()]
-    )
 
 
 @dataclass
