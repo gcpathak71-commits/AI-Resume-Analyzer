@@ -34,10 +34,17 @@ ROLES_CSV_PATH = os.path.join(BASE_DIR, "data", "roles.csv")
 # deployed frontend URL(s), e.g. "https://your-app.vercel.app". Local dev
 # origins are always included so `npm run dev` keeps working out of the box.
 _env_origins = os.environ.get("ALLOWED_ORIGINS", "")
-ALLOWED_ORIGINS = [origin.strip() for origin in _env_origins.split(",") if origin.strip()] + [
+
+ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
+    "https://ai-resume-analyzer-anurag-pathak-s-projects.vercel.app/",
 ]
+
+if _env_origins:
+    ALLOWED_ORIGINS.extend(
+        [origin.strip() for origin in _env_origins.split(",") if origin.strip()]
+    )
 
 
 @dataclass
