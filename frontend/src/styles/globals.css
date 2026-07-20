@@ -1,0 +1,96 @@
+/*
+  globals.css
+  -----------
+  Global styles layered on top of Tailwind: font imports, the animated
+  aurora background, custom scrollbar styling, and a small set of reusable
+  component classes (glass cards, gradient text, pill badges) so
+  individual components don't have to repeat long utility strings.
+*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-ink-950 text-mist-100 font-body antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display text-white tracking-tight;
+  }
+
+  ::selection {
+    @apply bg-violet-500/40 text-white;
+  }
+
+  /* Slim, on-brand scrollbar instead of the default OS chrome */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-ink-600 rounded-full;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-violet-600;
+  }
+}
+
+@layer components {
+  /* The signature "glass card" surface used across the dashboard */
+  .glass-card {
+    @apply relative rounded-3xl border border-white/10 bg-ink-800/60 backdrop-blur-xl shadow-card bg-card-sheen;
+  }
+
+  /* Gradient text for headlines and key numbers */
+  .gradient-text {
+    @apply bg-brand-gradient bg-clip-text text-transparent;
+  }
+
+  /* Small rounded status/category pill */
+  .pill {
+    @apply inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-medium;
+  }
+
+  .pill-violet {
+    @apply pill border-violet-500/30 bg-violet-500/10 text-violet-300;
+  }
+
+  .pill-cyan {
+    @apply pill border-cyan-400/30 bg-cyan-400/10 text-cyan-300;
+  }
+
+  .pill-mint {
+    @apply pill border-mint-400/30 bg-mint-400/10 text-mint-400;
+  }
+
+  .pill-rose {
+    @apply pill border-rose-400/30 bg-rose-400/10 text-rose-400;
+  }
+
+  .pill-muted {
+    @apply pill border-white/10 bg-white/5 text-mist-400;
+  }
+
+  /* Primary call-to-action button */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl2 bg-brand-gradient px-6 py-3 font-display font-semibold text-white shadow-glow transition-transform duration-200 hover:scale-[1.02] active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:scale-100;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl2 border border-white/15 bg-white/5 px-6 py-3 font-display font-semibold text-white transition-colors duration-200 hover:bg-white/10 disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  /* Full-viewport animated aurora backdrop, used once on the page shell */
+  .aurora-backdrop {
+    @apply pointer-events-none fixed inset-0 -z-10 bg-aurora-gradient;
+  }
+}

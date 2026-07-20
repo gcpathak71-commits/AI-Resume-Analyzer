@@ -1,0 +1,75 @@
+skill_name,category,aliases,weight
+Python,Programming Language,"python3,py",5
+Java,Programming Language,"core java,java8,java11,java17",4
+C++,Programming Language,"cpp,c plus plus",4
+C,Programming Language,"c language,c programming",3
+JavaScript,Programming Language,"js,ecmascript",4
+TypeScript,Programming Language,"ts",3
+Go,Programming Language,"golang",3
+Rust,Programming Language,"rust lang",3
+SQL,Database,"structured query language,t-sql,pl/sql",5
+R,Programming Language,"r language,r programming",3
+Machine Learning,AI/ML,"ml,machine-learning",5
+Deep Learning,AI/ML,"dl,deep-learning",5
+Natural Language Processing,AI/ML,"nlp,text mining",5
+Computer Vision,AI/ML,"cv,image processing,opencv",4
+Large Language Models,AI/ML,"llm,llms,generative ai,genai",5
+TensorFlow,AI/ML Framework,"tf,tensorflow2",5
+PyTorch,AI/ML Framework,"torch",5
+Keras,AI/ML Framework,"keras api",4
+Scikit-learn,AI/ML Framework,"sklearn,scikit learn",4
+Hugging Face,AI/ML Framework,"huggingface,transformers library",4
+Pandas,Data Library,"pd",4
+NumPy,Data Library,"np",4
+Matplotlib,Visualization,"plt",3
+Seaborn,Visualization,"sns",3
+Plotly,Visualization,"plotly express",3
+Power BI,Visualization,"powerbi",3
+Tableau,Visualization,"tableau desktop",3
+Streamlit,Web Framework,"streamlit app",3
+Flask,Web Framework,"flask api,flask restful",4
+Django,Web Framework,"django rest framework,drf",4
+FastAPI,Web Framework,"fast api",4
+Spring Boot,Web Framework,"spring,springboot",4
+HTML,Web Development,"html5",3
+CSS,Web Development,"css3,tailwind,tailwind css",3
+React,Web Framework,"reactjs,react.js",4
+Vue.js,Web Framework,"vue,vuejs",3
+Angular,Web Framework,"angularjs",3
+Node.js,Web Framework,"nodejs,node",4
+REST API,Web Development,"restful api,rest apis,api development",4
+GraphQL,Web Development,"graph ql",3
+Git,Version Control,"git version control",4
+GitHub,Version Control,"github actions",3
+Docker,DevOps,"containerization,containerisation",4
+Kubernetes,DevOps,"k8s",3
+CI/CD,DevOps,"continuous integration,continuous deployment,jenkins",3
+AWS,Cloud,"amazon web services",5
+Azure,Cloud,"microsoft azure",4
+GCP,Cloud,"google cloud platform,google cloud",4
+Linux,Operating System,"unix,bash,shell scripting",3
+MySQL,Database,"my sql",4
+MongoDB,Database,"mongo db,nosql",4
+PostgreSQL,Database,"postgres",4
+Redis,Database,"redis cache",3
+Data Structures,Core CS,"dsa,data structures and algorithms",5
+Algorithms,Core CS,"algo,algorithm design",5
+OOPs,Core CS,"object oriented programming,oop",4
+System Design,Core CS,"distributed systems design",4
+Statistics,Mathematics,"statistical analysis",4
+Linear Algebra,Mathematics,"matrix algebra",3
+Probability,Mathematics,"probability theory",3
+Data Visualization,Data Analysis,"data viz",3
+Data Cleaning,Data Analysis,"data wrangling,data preprocessing",4
+Feature Engineering,AI/ML,"feature extraction",4
+Model Deployment,AI/ML,"mlops,model serving",4
+Neural Networks,AI/ML,"ann,artificial neural networks",4
+Excel,Productivity Tool,"ms excel,microsoft excel",3
+Jupyter Notebook,Tool,"jupyter,ipynb",3
+API Integration,Web Development,"third party api",3
+Agile,Methodology,"scrum,agile methodology",3
+Communication Skills,Soft Skill,"verbal communication",2
+Problem Solving,Soft Skill,"analytical thinking",2
+Team Leadership,Soft Skill,"leadership skills",2
+Time Management,Soft Skill,"prioritization",2
+Critical Thinking,Soft Skill,"critical reasoning",2
