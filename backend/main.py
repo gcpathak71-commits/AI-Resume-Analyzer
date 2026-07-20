@@ -38,8 +38,14 @@ _env_origins = os.environ.get("ALLOWED_ORIGINS", "")
 ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
-    "https://ai-resume-analyzer-anurag-pathak-s-projects.vercel.app/",
+    "https://ai-resume-analyzer-anurag-pathak-s-projects.vercel.app",
+    "https://ai-resume-analyzer-beta-rose.vercel.app",
 ]
+
+if _env_origins:
+    ALLOWED_ORIGINS.extend(
+        [origin.strip() for origin in _env_origins.split(",") if origin.strip()]
+    )
 
 if _env_origins:
     ALLOWED_ORIGINS.extend(
