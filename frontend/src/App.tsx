@@ -43,7 +43,7 @@ export default function App() {
           <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-brand-gradient shadow-glow">
             <BrainCog className="h-5 w-5 text-white" />
           </span>
-          Resume Analyzer <span className="gradient-text">Pro</span>
+          AI Resume <span className="gradient-text">Analyzer</span>
         </button>
 
         <a
