@@ -52,7 +52,7 @@ export default function App() {
           rel="noreferrer"
           className="hidden text-sm text-mist-400 transition-colors hover:text-white sm:block"
         >
-          v2.0 · FastAPI + React
+          FastAPI + React
         </a>
       </header>
 
