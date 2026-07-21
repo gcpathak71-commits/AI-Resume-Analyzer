@@ -8,7 +8,7 @@ recommendations ranked by a blended skill-overlap + TF-IDF similarity score
 
 This is a full rewrite of the original Streamlit prototype: no Streamlit
 anywhere, a decoupled REST API + SPA architecture, and materially more
-accurate matching logic throughout (see **What Changed From v1** below).
+accurate matching logic throughout
 
 ---
 
@@ -20,10 +20,6 @@ python-dateutil, fpdf2, Pydantic.
 
 **Frontend:** React 18 + Vite + TypeScript, Tailwind CSS (custom design
 system), Framer Motion, Recharts, Axios, lucide-react.
-
-> **Note:** earlier drafts of this project used `sentence-transformers`
-> for job-role matching. That dependency has been removed — see
-> **What Changed From v1** for why.
 
 ---
 
